@@ -1,0 +1,15 @@
+1) Predictions
+- y_true vs y_pred
+- residual
+
+2) Explanaible AI
+- Permutation Importance
+- Partial Dependece Plots
+- shapley values - shap - shapash
+- Alibi
+
+3) Perturbation Tests
+
+4) Analyze score by segmentation most important features
+
+5) In progress
