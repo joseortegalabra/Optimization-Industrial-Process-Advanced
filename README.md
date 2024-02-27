@@ -34,7 +34,7 @@ This repo has the following improves (complexity increment) againts the base cod
 - **Update optimization engine**: first, update optimization engine with the updates in the training models: using piecewise models, more complex models, transformations in columns, operations in columns (the improves defined previosly)
 
 
-- FALTA: Parametrize the codes of Gurobi Optimizer (creation of decision var, constraints, etc)
+- FALTA: Parametrize and automatization of the codes of Gurobi Optimizer (creation of decision var, constraints, etc)
 
 - FALTA: Relajar restricciones
 
