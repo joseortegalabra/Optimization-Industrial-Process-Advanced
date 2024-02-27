@@ -27,13 +27,16 @@ This repo has the following improves (complexity increment) againts the base cod
 
 - **Training more complex models** (Ensembles models: bagging, boosting, etc)
 
-- **Using Gurobi Licence**
+- **Using Gurobi Licence**: Using gurobi licence to include all the models trained
 
 - **Train piecewise models**: Not exactly but following this idea. Split the data according one important feature and train differents models for each segment generated. The idea is have a better global model with the split of the data because a difference in the distribution of the data had identified.
 
-- **Optimization Engine with piecewise model**: Include the piecewise trained into optimization engine with a selection of the models according the segment
+- **Update optimization engine**: first, update optimization engine with the updates in the training models: using piecewise models, more complex models, transformations in columns, operations in columns (the improves defined previosly)
 
-- Parametrize the codes of Gurobi Optimizer (creation of decision var, constraints, etc)
+
+- FALTA: Parametrize the codes of Gurobi Optimizer (creation of decision var, constraints, etc)
+
+- FALTA: Relajar restricciones
 
 
 ### Folder
