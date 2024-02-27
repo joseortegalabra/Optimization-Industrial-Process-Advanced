@@ -1,4 +1,4 @@
-# Optimization-Industrial-Process
+# Optimization-Industrial-Process-ADVANCED
 
 Repo to show and example of end-to-end industrial project using machine learning models and optimization with gurobi. This repo is the continuation of the example of end-to-end that use Free Licence of Gurobi show in: https://github.com/joseortegalabra/Optimization-Industrial-Process. But now, more and more complex models were trained, so to run this codes it is necessary has a gurobi lic
 
@@ -13,7 +13,7 @@ The objetive is that the output of the final subprocess (output of the process) 
 ### List models
 The list of models trained and used in optimization models are divided into:
 - d0eop_microkappa
-- d0eop_brillo
+- d0eop_blancura
 - d1_brillo
 - p_blancura
 
@@ -21,9 +21,18 @@ The list of models trained and used in optimization models are divided into:
 ### Improves vs base codes
 This repo has the following improves (complexity increment) againts the base codes (that you can find in this repo: https://github.com/joseortegalabra/Optimization-Industrial-Process)
 
-- Adding models (In the base end-to-end project 3 models are development and including into optimization engine. In this notebook at least there are 4 models)
-- Training more complex models (Ensembles models: bagging, boosting, etc)
-- Using Gurobi Licence
+- **Adding models** (In the base end-to-end project 3 models are development and including into optimization engine. In this notebook at least there are 4 models). Important: Adding models in the same stage and share some features NC and features C. So, this is a little problem to thinking and solve.
+
+- **Include transformations in the pipeline of models** (standarscaler, polynomial features, operations in columns). Interesting transformations that are not supported: minmaxscaler, custom function in columns operations.
+
+- **Training more complex models** (Ensembles models: bagging, boosting, etc)
+
+- **Using Gurobi Licence**
+
+- **Train piecewise models**: Not exactly but following this idea. Split the data according one important feature and train differents models for each segment generated. The idea is have a better global model with the split of the data because a difference in the distribution of the data had identified.
+
+- **Optimization Engine with piecewise model**: Include the piecewise trained into optimization engine with a selection of the models according the segment
+
 - Parametrize the codes of Gurobi Optimizer (creation of decision var, constraints, etc)
 
 

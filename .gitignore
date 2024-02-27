@@ -29,5 +29,10 @@ gurobi.lic
 **/.html
 *.html
 
+# json files configuration
+.json
+**/.json
+*.json
+
 
 
