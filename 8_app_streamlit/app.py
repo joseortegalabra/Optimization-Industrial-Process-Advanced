@@ -19,7 +19,7 @@ st.set_page_config(layout="wide")
 ################################# Read env variables #################################
 import os
 
-""" Read env variables and save it as python variable """
+#Read env variables and save it as python variable
 WLSACCESSID = os.environ.get("WLSACCESSID", "")
 WLSSECRET = os.environ.get("WLSSECRET", "")
 LICENSEID = int(os.environ.get("LICENSEID", ""))
