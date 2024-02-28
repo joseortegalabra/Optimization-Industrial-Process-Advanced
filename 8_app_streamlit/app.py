@@ -191,7 +191,7 @@ if __name__ == "__main__":
         deltas_decision_var_features.loc[deltas_decision_var_features['TAG_DESCRIPTION'] == 'especifico_acido_p', 'DELTA'] = input_delta_especifico_acido_p
 
         # load prices
-        path_prices = 'config/optimization_engine/config_optimization/price-chemicals.xlsx'
+        path_prices = 'config/optimization_engine/config_optimization/Price-chemicals.xlsx'
         prices = pd.read_excel(path_prices)
 
 
