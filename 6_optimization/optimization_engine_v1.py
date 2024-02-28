@@ -810,8 +810,3 @@ def optimization_engine(df_input_values,
         diff_delta_decision_var = 0
         
     return status_solver, opt_cost, solution, actual_values, diff_delta_decision_var
-
-
-
-
-
