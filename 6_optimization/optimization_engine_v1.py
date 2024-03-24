@@ -63,7 +63,11 @@ def optimization_engine(df_input_values,
                         env
                         ):
     """
-    Given a certain parameters, ml models, etc. Give a optimal solution using gurobi
+    Given a certain parameters, ml models, etc. Give a optimal solution using gurobi.
+    
+    The optimization engine recibe the dataframes with the configuration files. This is done in this way because out of this script there are other code
+    to relax the constraints (changing the values of the configuration files) and this script (optimization engine) recibe the exactly values to solve the 
+    optimization problem
     
     Args:
         df_input_values
