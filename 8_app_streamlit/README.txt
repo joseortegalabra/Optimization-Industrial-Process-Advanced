@@ -1,3 +1,9 @@
+HOW TO RUN THIS APP - LOCALLY
+- Open console
+- Navigate to the folder where is located this app. cd xxx
+- write the command: streamlit run app.py
+
+
 HOW TO DEVELOP THIS APP
 
 - Load base files streamlit:
