@@ -19,6 +19,10 @@ st.set_page_config(layout="wide")
 ################################# Read env variables #################################
 import os
 
+# package used in jupyter notebook to read the variables in file .env
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
 #Read env variables and save it as python variable
 WLSACCESSID = os.environ.get("WLSACCESSID", "")
 WLSSECRET = os.environ.get("WLSSECRET", "")
